@@ -24,7 +24,9 @@
     "@unocss/reset": "^0.50.6",
     "@vueuse/core": "^9.13.0",
     "@vueuse/head": "^1.1.23",
+    "jsdom": "^21.1.1",
     "nprogress": "^0.2.0",
+    "p-queue": "^7.3.4",
     "pinia": "^2.0.33",
     "vite-plugin-electron-renderer": "^0.13.14",
     "vue": "^3.2.47",
@@ -36,6 +38,7 @@
     "@antfu/eslint-config": "^0.38.2",
     "@iconify-json/carbon": "^1.1.16",
     "@intlify/unplugin-vue-i18n": "^0.10.0",
+    "@types/jsdom": "^21.1.1",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^4.1.0",
@@ -77,11 +80,5 @@
     "vitest": "^0.29.8",
     "vue-tsc": "^1.2.0"
   },
-  "extends": null,
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
-  }
+  "extends": null
 }

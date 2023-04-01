@@ -44,6 +44,9 @@ export default defineConfig({
 
     Pages({
       extensions: ['vue', 'md'],
+      dirs: [
+        { dir: 'src/pages', baseRoute: '' },
+      ],
     }),
 
     Layouts(),

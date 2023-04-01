@@ -16,7 +16,7 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <div text-4xl>
+    <div text-4xl class="main_icon">
       <div i-carbon-campsite inline-block />
     </div>
     <p>
@@ -54,3 +54,13 @@ const { t } = useI18n()
 meta:
   layout: home
 </route>
+
+<style scoped lang="scss">
+@use "sass:math";
+.main_icon {
+  div {
+    width: math.div(300px, 960px) * 100%;
+    background-color: #fff000;
+  }
+}
+</style>
